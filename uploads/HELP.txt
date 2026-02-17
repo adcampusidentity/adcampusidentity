@@ -1,0 +1,25 @@
+Fine-grained PAT (nên dùng với GitHub Manager)
+Vào cài đặt token
+Đăng nhập GitHub → ảnh avatar (góc phải) → Settings.
+Trong menu trái: Developer settings → Personal access tokens → Fine-grained tokens.
+Tạo token mới
+Bấm Generate new token.
+Điền form
+Token name: tên dễ nhớ (vd: GitHubManager).
+Expiration: chọn thời hạn (90 days, 1 year, custom, hoặc No expiration).
+Repository access:
+Only select repositories → chọn từng repo cần push/commit, hoặc
+All repositories nếu muốn dùng cho mọi repo.
+Permissions (ít nhất cần):
+Repository permissions:
+Contents: Read and write (để push commit).
+Metadata: Read-only (tự bật).
+Nếu app cần đọc thông tin user/repos:
+Account permissions → Account: Read-only (để dùng API /user, /user/repos).
+Tạo và lưu token
+Bấm Generate token.
+Copy token ngay (chỉ hiện một lần), rồi dán vào GitHub Manager (ô PAT).
+Classic PAT (thay thế)
+Developer settings → Personal access tokens → Tokens (classic) → Generate new token (classic).
+Chọn scope, ví dụ: repo (full), read:user, v.v.
+Classic PAT quyền rộng hơn; Fine-grained an toàn hơn vì giới hạn theo repo và quyền.
